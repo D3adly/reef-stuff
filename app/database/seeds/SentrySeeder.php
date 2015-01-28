@@ -8,6 +8,7 @@
 
 use App\Models\User;
 
+
 class SentrySeeder extends Seeder{
 
     public function run()
@@ -46,7 +47,7 @@ class SentrySeeder extends Seeder{
         $adminUser  = Sentry::getUserProvider()->findByLogin('admin@admin.com');
         $adminGroup = Sentry::getGroupProvider()->findByName('Admin');
 
-        $user = Sentry::getUserProvider()->findByLogins('user@user.com');
+        $user = Sentry::getUserProvider()->findByLogin('user@user.com');
         $userGroup = Sentry::getGroupProvider()->findByName('User');
 
         $adminUser->addGroup($adminGroup);

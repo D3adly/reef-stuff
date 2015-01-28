@@ -6,13 +6,15 @@
  * Time: 17:51
  */
 
-class ContentSeeder {
+use App\Models\Reading;
+
+class ContentSeeder extends Seeder{
     public function run()
     {
         DB::table('readings')->delete();
 
-        Readings::create(array(
-            'user_id'   => '2',
+        Reading::create(array(
+            'user_id'   => '8',
             'ph'        => 8.3,
         ));
     }

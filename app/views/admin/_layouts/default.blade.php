@@ -82,7 +82,7 @@
 
         <div id="body-container">
             <div id="body-content">
-                @include('admin._partials.navigation')
+                @include('..._partials.navigation')
                 @yield('page container')
             </div>
         </div>
