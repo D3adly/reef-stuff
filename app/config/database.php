@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'host'      => 'agdb.clhwh3loyk8h.eu-west-1.rds.amazonaws.com',
+			'database'  => 'dev_reefstuff',
+			'username'  => 'root',
+			'password'  => 'Kobrynas1',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

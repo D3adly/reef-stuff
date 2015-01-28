@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://reef-stuff.my.dev',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'V9sLX1x9XoH2uOpnX7EYk4ojfzuM4HYW',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -121,6 +121,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Cartalyst\Sentry\SentryServiceProvider',
 
 	),
 
@@ -190,5 +191,7 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
 
 	),
+
+    'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 
 );
