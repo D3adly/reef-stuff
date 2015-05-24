@@ -12,6 +12,7 @@
 */
 
 Route::get('/', array('as' => 'home', 'uses' => 'App\Controllers\HomeController@index'));
+Route::get('/water-parameters', array('as' => 'water-parameters', 'uses' => 'App\Controllers\ParametersController@index'));
 
 Route::get('admin/logout',
     array('as' => 'admin.logout',
