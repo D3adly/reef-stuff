@@ -25,4 +25,5 @@
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script src="/js/jquery/jquery-1.11.3.min.js" type="text/javascript" ></script>
 <script src="/site/js/bootstrap.min.js" type="text/javascript" ></script>
+<script src="/site/js/main.js" type="text/javascript" ></script>
 </html>

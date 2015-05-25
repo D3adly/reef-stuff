@@ -13,6 +13,7 @@
 
 Route::get('/', array('as' => 'home', 'uses' => 'App\Controllers\HomeController@index'));
 Route::get('/water-parameters', array('as' => 'water-parameters', 'uses' => 'App\Controllers\ParametersController@index'));
+Route::post('/water-parameters/submit', array('as' => 'water-parameters.submit', 'uses' => 'App\Controllers\ParametersController@submit'));
 
 Route::get('admin/logout',
     array('as' => 'admin.logout',

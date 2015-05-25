@@ -8,6 +8,7 @@
 
 use App\Models\Reading;
 use App\Models\Article;
+use App\Models\DefaultReading;
 
 class ContentSeeder extends Seeder{
     public function run()
@@ -18,6 +19,16 @@ class ContentSeeder extends Seeder{
             'user_id'   => '8',
             'ph'        => 8.3,
         ));
+
+        DB::table('defaultReadings')->delete();
+        DefaultReading::create(
+            array(
+                'reading' => 'salinity',
+                'value' =>6.5,
+                'dispersion' => 0.2,
+                'measurement' => 'ppt',
+            )
+        );
 
         DB::table('articles')->delete();
 
